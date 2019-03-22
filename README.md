@@ -1,2 +1,2 @@
 # v8-geckos-team-10
-Add-project-description-here | Voyage-8 | https://chingu.io/
+Launching a Nonprofit Website: Generation Diamond | Voyage-8 | https://chingu.io/
