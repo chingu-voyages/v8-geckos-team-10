@@ -1,3 +1,8 @@
+html,
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 .App {
   text-align: center;
 }
@@ -30,4 +35,50 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* Footer Styles */
+
+.footer__container {
+  line-height: 30px;
+  text-align: center;
+}
+
+.footer__top {
+  background-color: #224871;
+  display: grid;
+  font-size: 14px;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 20px 10px;
+}
+
+@media (min-width: 400px) {
+  .footer__top {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 640px) {
+  .footer__top {
+    grid-template-columns: repeat(8, 1fr);
+  }
+}
+
+.footer__top__link {
+  color: #f1f9fe;
+  padding: 0 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.footer__bottom {
+  color: #f1f9fe;
+  background-color: #091d44;
+  padding: 10px;
+}
+
+.footer__bottom__company-name {
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
