@@ -1,0 +1,26 @@
+$home-image: url(/assets/background.jpg);
+$primary-font:  #f1f9ff;
+
+@mixin mediaSm {
+    @media screen and (min-width: 400px) and (max-width: 500px) {
+      @content;
+    }
+  }
+  
+  @mixin mediaMd {
+    @media screen and (max-width: 768px) {
+      @content;
+    }
+  }
+  
+  @mixin mediaLg {
+    @media screen and (min-width: 769px) and (max-width: 1170px) {
+      @content;
+    }
+  }
+  
+  @mixin mediaXl {
+    @media screen and (min-width: 1171px) {
+      @content;
+    }
+  }
