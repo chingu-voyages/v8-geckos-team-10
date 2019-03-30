@@ -1,3 +1,5 @@
+@import "config";
+
 html,
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -7,41 +9,38 @@ body {
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+/* Landing Page Body Styles */
+
+.landing__page__body {
+  background: $home-image no-repeat center center fixed;
+  background-size: cover;
+  height: 100%;
+  overflow: hidden;
+  //temporary fix until implementing header 
+  padding-top: 300px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.company__title {
+  color: $primary-font;
+  font-size: 64px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.company__slogan {
+  color: $primary-font;
+  font-size: 24px;
+  font-weight: 500px;
+  
 }
 
 /* Footer Styles */
 
 .footer__container {
+  position: fixed;
   line-height: 30px;
   text-align: center;
+  left: 0;
+  bottom: 0;
+  width: 100%;
 }
 
 .footer__top {
@@ -65,14 +64,14 @@ body {
 }
 
 .footer__top__link {
-  color: #f1f9fe;
+  color: $primary-font;
   padding: 0 10px;
   text-decoration: none;
   text-transform: uppercase;
 }
 
 .footer__bottom {
-  color: #f1f9fe;
+  color: $primary-font;
   background-color: #091d44;
   padding: 10px;
 }
@@ -81,4 +80,8 @@ body {
   font-weight: 600;
   letter-spacing: 1px;
   text-transform: uppercase;
+}
+
+.footer__bottom__copyright {
+  font-size: 10px;
 }

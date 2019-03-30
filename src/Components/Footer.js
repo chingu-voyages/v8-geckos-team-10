@@ -1,6 +1,6 @@
-import React, { Component } from "react";
+import React from "react";
 
-const Branch = () => {
+const Footer = () => {
   return (
     <div className="footer__container">
       <div className="footer__top">
@@ -31,7 +31,7 @@ const Branch = () => {
       </div>
       <div className="footer__bottom">
         <div className="footer__bottom__company-name">
-          Latino Community Betterment Corportation
+          Latino Community Betterment Corporation
         </div>
         <div className="footer__bottom__copyright">
           © 2019 | All Rights Reserved
@@ -41,4 +41,4 @@ const Branch = () => {
   );
 };
 
-export default Branch;
+export default Footer;
