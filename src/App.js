@@ -6,23 +6,52 @@ import Footer from "./Components/Footer.js";
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-        <Footer />
-      </div>
+      //////////////////////// NavBar /////////////////////////// 
+      <ul>
+        <li>
+          <div className="btn-container">
+            <a href="#">Home</a>
+          </div>
+        </li>
+
+        <li>
+          <div className="btn-container">
+            <a href="#">About Us</a>
+          </div>
+        </li>
+
+        <li>
+          <div className="btn-container">
+            <a href="#">Diamond Stories</a>
+            </div>
+          </li>
+
+        <li>
+          <div className="btn-container">
+            <a href="#">Photos</a>
+          </div>
+        </li>
+
+        <li>
+          <div className="btn-container">
+            <a href="#">Volunteer</a>
+          </div>
+        </li>
+
+        <li>
+          <div className="btn-container">
+            <a href="#">Donate</a>
+          </div>
+        </li>
+
+        <li>
+          <div className="btn-container">
+            <a href="#">Contact Us</a>
+          </div>
+        </li>
+</ul>
+//////////////////////// End of NavBar ///////////////////////////
+        
     );
   }
 }
