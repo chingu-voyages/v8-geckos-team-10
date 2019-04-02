@@ -10,11 +10,12 @@ body {
 }
 
 /*NavBar Styles */
+
 .btn-container a {
   text-decoration: none;
   color: white;
   line-height: 40px;
-  background: #091d44;
+  background: $color-blue-dark;
   padding: 0px 40px;
   position: relative;
   transition: all 0.5s ease-out;
@@ -22,15 +23,16 @@ body {
 .btn-container a:hover {
   padding: 0px 60px;
 }
-.btn-container a:after, .btn-container a:before {
-  content: '';
+.btn-container a:after,
+.btn-container a:before {
+  content: "";
   height: 30px;
   width: 30px;
   display: block;
   position: absolute;
   top: 6px;
   transform: rotate(45deg);
-  background: #224871;
+  background: $color-blue-medium;
   z-index: 3;
 }
 .btn-container a:after {
@@ -44,7 +46,7 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #224871;
+  background-color: $color-blue-medium;
 }
 li {
   float: left;
@@ -56,8 +58,9 @@ li a {
   text-decoration: none;
 }
 li a:hover {
-  background-color: #6ba1cc;
+  background-color: $color-blue-light;
 }
+
 /* Landing Page Body Styles */
 
 .landing__page__body {
@@ -68,15 +71,14 @@ li a:hover {
 }
 
 .company__title {
-  color: $primary-font;
+  color: $color-primary-font;
   font-size: 64px;
 }
 
 .company__slogan {
-  color: $primary-font;
+  color: $color-primary-font;
   font-size: 24px;
   font-weight: 500px;
-  
 }
 
 /* Footer Styles */
@@ -91,11 +93,11 @@ li a:hover {
 }
 
 .footer__top {
-  background-color: #224871;
+  background-color: $color-blue-medium;
   display: grid;
   font-size: 14px;
   grid-template-columns: repeat(2, 1fr);
-  padding: 20px 10px;
+  padding: 6px;
 }
 
 @media (min-width: 400px) {
@@ -111,24 +113,25 @@ li a:hover {
 }
 
 .footer__top__link {
-  color: $primary-font;
+  color: $color-primary-font;
   padding: 0 10px;
   text-decoration: none;
   text-transform: uppercase;
 }
 
 .footer__bottom {
-  color: $primary-font;
-  background-color: #091d44;
-  padding: 10px;
+  color: $color-primary-font;
+  background-color: $color-blue-dark;
+  padding: 2px;
 }
 
 .footer__bottom__company-name {
+  font-size: 15px;
   font-weight: 600;
   letter-spacing: 1px;
   text-transform: uppercase;
 }
 
 .footer__bottom__copyright {
-  font-size: 10px;
+  font-size: 12px;
 }
