@@ -10,7 +10,11 @@ body {
 }
 
 /*NavBar Styles */
-
+.navBar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
 .btn-container a {
   text-decoration: none;
   color: white;
@@ -64,10 +68,7 @@ li a:hover {
 /* Landing Page Body Styles */
 
 .landing__page__body {
-  background: $home-image no-repeat center center fixed;
-  background-size: cover;
-  height: 100%;
-  overflow: hidden;
+  margin: 20%;
 }
 
 .company__title {
