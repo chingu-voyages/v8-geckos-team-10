@@ -3,7 +3,6 @@ import "./stylesheets/App.scss";
 import LandingPage from "./Components/LandingPage.js";
 import Footer from "./Components/Footer.js";
 import NavBar from "./Components/NavBar.js";
-import Donate from "./Components/Donate.js";
 
 class App extends Component {
   render() {
