@@ -2,8 +2,8 @@ import React from "react";
 
 const NavBar = () => {
   return (
-    <div className='navBar'>
-      <ul>
+    <div className="navBar">
+      <ul className="navBar-list">
         <li>
           <div className="btn-container">
             <a href="#">Home</a>
