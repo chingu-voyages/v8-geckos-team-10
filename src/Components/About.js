@@ -5,6 +5,8 @@ const About = () => {
     <div className="about-us__container">
       <div className="organization__container">
           <h1 className="about-title">ABOUT US</h1>
+        <div className="organization__details">
+          <h1>About Us</h1>
           <p>Latino CBC is a non-profit organization that works with the Douglas County Young Adult Court. 
             YAC is a judicially supervised program that provides sentencing alternatives for youthful offenders 
             up to age 25 who are charged with a felony to participate in a program of selective assessment and 
@@ -168,6 +170,24 @@ const About = () => {
           <h3>Hours of Operation</h3>
           <p>Monday-Friday 9:00am - 4:00pm</p>
         </div>
+        </div>
+      </div>
+      <div className="program__details">
+        <h3>Services</h3>
+        <ul>
+          <li>Legal Aid</li>
+          <li>Employment Assistance</li>
+          <li>Community Services</li>
+          <li>ESL Classes</li>
+          <li>Spanish Classes</li>
+          <li>Scholarship Information</li>
+          <li>Food Pantry</li>
+          <li>Legal Services for Immigration and Worker's Compensation Cases</li>\
+        </ul>
+      </div>
+      <div className="program__details">
+        <h3>Hours of Operation</h3>
+         <p>Monday-Friday 9:00am - 4:00pm</p>
       </div>     
     </div>
   );
