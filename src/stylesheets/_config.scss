@@ -6,6 +6,8 @@ $color-blue-medium: #224871;
 $color-blue-dark: #091d44;
 $color-black: #000000;
 
+$max-width-body: 1000px;
+
 @mixin mediaSm {
   @media screen and (min-width: 400px) and (max-width: 500px) {
     @content;

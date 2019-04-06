@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./stylesheets/App.scss";
-import LandingPage from "./Components/LandingPage.js"
+import LandingPage from "./Components/LandingPage.js";
 import Footer from "./Components/Footer.js";
 import NavBar from "./Components/NavBar.js";
 
@@ -10,6 +10,7 @@ class App extends Component {
       <div className="App">
         <NavBar />
         <LandingPage />
+        <Stories />
         <Footer />
       </div>
     );
