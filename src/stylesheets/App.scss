@@ -24,7 +24,7 @@ body {
   width: 100%;
   z-index: 1;
 }
-.btn-container a {
+.btn-container .navLink {
   text-decoration: none;
   color: white;
   line-height: 40px;
@@ -33,12 +33,12 @@ body {
   position: relative;
   transition: all 0.5s ease-out;
 }
-.btn-container a:hover {
+.btn-container .navLink:hover {
   padding: 0px 60px;
 }
 
-.btn-container a:after,
-.btn-container a:before {
+.btn-container .navLink:after,
+.btn-container .navLink:before {
   content: "";
   height: 30px;
   width: 30px;
@@ -50,11 +50,11 @@ body {
   z-index: 3;
 }
 
-.btn-container a:after {
+.btn-container .navLink:after {
   left: -15px;
 }
 
-.btn-container a:before {
+.btn-container .navLink:before {
   right: -15px;
 }
 
@@ -66,18 +66,18 @@ body {
   background-color: $color-blue-medium;
 }
 
-.navBar-list li {
+.navBar-list .navElement {
   float: left;
 }
 
-li a {
+li .navLink {
   display: block;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 
-li a:hover {
+.navElement .navLink:hover {
   background-color: $color-blue-light;
 }
 
