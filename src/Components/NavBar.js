@@ -6,43 +6,43 @@ const NavBar = () => {
       <ul className="navBar-list">
         <li>
           <div className="btn-container">
-            <a href="#">Home</a>
+            <a href="#home">Home</a>
           </div>
         </li>
 
         <li>
           <div className="btn-container">
-            <a href="#">About Us</a>
+            <a href="#about">About Us</a>
           </div>
         </li>
 
         <li>
           <div className="btn-container">
-            <a href="#">Diamond Stories</a>
+            <a href="#story">Diamond Stories</a>
           </div>
         </li>
 
         <li>
           <div className="btn-container">
-            <a href="#">Photos</a>
+            <a href="#photos">Photos</a>
           </div>
         </li>
 
         <li>
           <div className="btn-container">
-            <a href="#">Volunteer</a>
+            <a href="#volunteer">Volunteer</a>
           </div>
         </li>
 
         <li>
           <div className="btn-container">
-            <a href="#">Donate</a>
+            <a href="#donate">Donate</a>
           </div>
         </li>
 
         <li>
           <div className="btn-container">
-            <a href="#">Contact Us</a>
+            <a href="#contact">Contact Us</a>
           </div>
         </li>
       </ul>
