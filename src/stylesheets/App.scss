@@ -23,6 +23,7 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 1;
 }
 .btn-container a {
   text-decoration: none;
@@ -97,6 +98,114 @@ li a:hover {
   text-shadow: 2px 2px 10px $color-blue-medium;
 }
 
+/*Stories Page Styles*/
+.stories_container {
+  background-color: $color-blue-light;
+  margin: 10% auto;
+}
+.stories_title {
+  font-size: 2rem;
+  padding: 35px;
+  color: $color-primary-font;
+}
+/*Testimonies */
+
+.testimonials_container{
+  display: grid;
+  padding: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 3rem;
+
+}
+
+.snip1386 {
+  position: relative;
+  overflow: hidden;
+  margin: 2em;
+  min-width: 530px;
+  max-width: 450px;
+  max-height: 320px;
+  width: 100%;
+  color: #000000;
+  text-align: left;
+  font-size: 16px;
+  background-color: $color-blue-light;
+  
+}
+.snip1386 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.snip1386 .background {
+  max-width: 100%;
+  backface-visibility: hidden;
+  opacity: 0.5;
+}
+.snip1386 figcaption {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  opacity: 1;
+  padding: 30px 10px 30px 0;
+  background-color: #ffffff;
+  width: 50%;
+}
+.snip1386 figcaption:before {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  left: 100%;
+  content: '';
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 160px 0 160px 160px;
+  border-color: transparent transparent transparent #ffffff;
+}
+.snip1386:after {
+  position: absolute;
+  bottom: 75%;
+  left: 45%;
+  content: '';
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 140px 140px 0 140px;
+  border-color: rgba(255, 255, 255, 0.5) transparent transparent transparent;
+}
+.snip1386 h5,
+.snip1386 blockquote {
+  line-height: 1.6em;
+  -webkit-transform: translateX(30px);
+  transform: translateX(30px);
+  margin: 0;
+}
+.snip1386 h5 {
+  margin: 10px 0;
+  line-height: 1.1em;
+  font-weight: 900;
+  color: #1a1a1a;
+}
+.snip1386 blockquote {
+  font-size: 1em;
+  font-style: italic;
+}
+.snip1386 .profile {
+  position: absolute;
+  width: 100px;
+  border-radius: 50%;
+  top: 50%;
+  right: 25%;
+  z-index: 1;
+  -webkit-transform: translate(50%, -50%);
+  transform: translate(50%, -50%);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+
 /* Footer Styles */
 
 .footer__container {
@@ -106,6 +215,7 @@ li a:hover {
   left: 0;
   bottom: 0;
   width: 100%;
+  z-index: 1;
 }
 
 .footer__top {
