@@ -2,11 +2,20 @@
 
 html,
 body {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  // font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Raleway", sans-serif;
+  height: 100%;
+  width: 100%;
+}
+
+#root {
+  height: 100%;
+  width: 100%;
 }
 
 .App {
   text-align: center;
+  height: 100%;
 }
 
 /*NavBar Styles */
@@ -46,14 +55,14 @@ body {
 .btn-container a:before {
   right: -15px;
 }
-ul {
+.navBar-list {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
   background-color: $color-blue-medium;
 }
-li {
+.navBar-list li {
   float: left;
 }
 li a {
@@ -69,18 +78,24 @@ li a:hover {
 /* Landing Page Body Styles */
 
 .landing__page__body {
-  margin: 20%;
+  display: inline-block;
+  vertical-align: middle;
+  max-width: $max-width-body;
+  margin: 150px auto 0 auto;
+  padding: 15px;
 }
 
 .company__title {
   color: $color-primary-font;
   font-size: 64px;
+  text-shadow: 2px 2px 10px $color-blue-dark;
 }
 
 .company__slogan {
   color: $color-primary-font;
   font-size: 24px;
   font-weight: 500px;
+  text-shadow: 2px 2px 10px $color-blue-medium;
 }
 
 /*Stories Page Styles*/
@@ -245,4 +260,53 @@ li a:hover {
 
 .footer__bottom__copyright {
   font-size: 12px;
+}
+
+/* Donate Page styles */
+.donate-page__container {
+  background-color: rgba(241, 249, 255, 0.9);
+  line-height: 25px;
+  margin: 0 auto;
+  max-width: $max-width-body;
+  padding: 40px 20px 200px;
+  text-align: left;
+}
+
+.donate-page__list {
+  list-style: circle;
+}
+
+.donate__heading--primary {
+  font-size: 40px;
+  letter-spacing: 1px;
+  padding: 10px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.donate__heading--secondary {
+  color: $color-blue-medium;
+}
+
+.btn--donate {
+  border-radius: 5px;
+  background-color: $color-blue-medium;
+  color: $color-primary-font;
+  display: block;
+  font-weight: 600;
+  margin: 30px auto;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  width: 100px;
+}
+
+.btn--donate:hover {
+  background-color: $color-blue-light;
+  color: $color-blue-dark;
+}
+
+.btn--donate:active {
+  background-color: $color-blue-medium;
+  color: $color-primary-font;
 }
