@@ -1,53 +1,67 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
   return (
     <div className="navBar">
-        <ul className="navBar-list">
-          <li className='navElement'>
-            <div className="btn-container">
-              <a className='navLink' href="#home">Home</a>
-            </div>
-          </li>
+      <ul className="navBar-list">
+        <li className="navElement">
+          <div className="btn-container">
+            <Link className="navLink" to="/">
+              Home
+            </Link>
+          </div>
+        </li>
 
-          <li className='navElement'>
-            <div className="btn-container">
-              <a className='navLink' href="#about">About Us</a>
-            </div>
-          </li>
+        <li className="navElement">
+          <div className="btn-container">
+            <Link className="navLink" to="/about">
+              About us
+            </Link>
+          </div>
+        </li>
 
-          <li className='navElement'>
-            <div className="btn-container">
-              <a className='navLink' href="#story">Diamond Stories</a>
-            </div>
-          </li>
+        <li className="navElement">
+          <div className="btn-container">
+            <Link className="navLink" to="/stories">
+              Diamond Stories
+            </Link>
+          </div>
+        </li>
 
-          <li className='navElement'>
-            <div className="btn-container">
-              <a className='navLink' href="#photos">Photos</a>
-            </div>
-          </li>
+        <li className="navElement">
+          <div className="btn-container">
+            <Link className="navLink" to="/photos">
+              Photos
+            </Link>
+          </div>
+        </li>
 
-          <li className='navElement'>
-            <div className="btn-container">
-              <a className='navLink' href="#volunteer">Volunteer</a>
-            </div>
-          </li>
+        <li className="navElement">
+          <div className="btn-container">
+            <Link className="navLink" to="/volunteer">
+              Volunteer
+            </Link>
+          </div>
+        </li>
 
-          <li className='navElement'>
-            <div className="btn-container">
-              <a className='navLink' href="#donate">Donate</a>
-            </div>
-          </li>
+        <li className="navElement">
+          <div className="btn-container">
+            <Link className="navLink" to="/donate">
+              Donate
+            </Link>
+          </div>
+        </li>
 
-          <li className='navElement'>
-            <div className="btn-container">
-              <a className='navLink' href="#contact">Contact Us</a>
-            </div>
-          </li>
-        </ul>
-      </div>
-      
+        <li className="navElement">
+          <div className="btn-container">
+            <Link className="navLink" to="/contact">
+              Contact Us
+            </Link>
+          </div>
+        </li>
+      </ul>
+    </div>
   );
 };
 
