@@ -1,4 +1,5 @@
 import React from "react";
+import "../stylesheets/Donate.scss";
 
 const Donate = () => {
   return (
@@ -36,7 +37,7 @@ const Donate = () => {
       <a
         className="btn--donate"
         href="https://www.omahagives.org/index.php?section=organizations&action=overview&fwID=2008"
-        target="_blank"
+        target="_blank noopener noreferrer"
       >
         Donate
       </a>

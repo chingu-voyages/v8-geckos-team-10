@@ -1,0 +1,49 @@
+@import "config";
+
+.donate-page__container {
+  background-color: rgba(241, 249, 255, 0.9);
+  line-height: 25px;
+  margin: 0 auto;
+  max-width: $max-width-body;
+  padding: 40px 20px 200px;
+  text-align: left;
+}
+
+.donate-page__list {
+  list-style: circle;
+}
+
+.donate__heading--primary {
+  font-size: 40px;
+  letter-spacing: 1px;
+  padding: 10px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.donate__heading--secondary {
+  color: $color-blue-medium;
+}
+
+.btn--donate {
+  border-radius: 5px;
+  background-color: $color-blue-medium;
+  color: $color-primary-font;
+  display: block;
+  font-weight: 600;
+  margin: 30px auto;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  width: 100px;
+}
+
+.btn--donate:hover {
+  background-color: $color-blue-light;
+  color: $color-blue-dark;
+}
+
+.btn--donate:active {
+  background-color: $color-blue-medium;
+  color: $color-primary-font;
+}
