@@ -1,0 +1,206 @@
+@import "config";
+
+.contact-page__container {
+  background-color: rgba(241, 249, 255, 0.9);
+  line-height: 25px;
+  margin: 0 auto;
+  max-width: $max-width-body;
+  padding: 40px 20px 200px;
+  text-align: left;
+}
+
+.contact__heading--primary {
+  font-size: 40px;
+  letter-spacing: 1px;
+  padding: 10px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.contact-page__body {
+  display: grid;
+  grid-gap: 2%;
+}
+
+.contact-form__container,
+.contact-info__container {
+  box-sizing: border-box;
+  padding: 10px;
+  width: 100%;
+}
+@media (min-width: 650px) {
+  .contact-page__body {
+    grid-template-columns: 49% 49%;
+  }
+}
+.contact-form__container {
+  background-color: lighten($color-blue-light, 10%);
+}
+.contact-info__container {
+  background-color: lighten($color-blue-medium, 5%);
+}
+
+.contact-form__container form {
+  position: relative;
+  height: 100%;
+}
+
+/* all input fields stiles */
+.contact-form__input-box--text-short {
+  display: inline-block;
+  width: 50%;
+  margin: 2px 0;
+  text-align: start;
+}
+.contact-form__input-box--text-long input {
+  width: 100%;
+  height: 250px;
+  text-align: start;
+}
+.contact-form__label {
+  display: block;
+}
+.contact-form__mandatory-field {
+  color: rgb(207, 0, 114);
+  font-weight: 600;
+}
+.contact-form__mandatory-field::before {
+  content: "* ";
+}
+
+/* input and textarea styles */
+.contact-form__input-field,
+.contact-form__textarea {
+  border: 1px solid $color-primary-font;
+  font-size: 14px;
+  padding-left: 5px;
+}
+.contact-form__input-field {
+  height: 22px;
+  width: 90%;
+}
+.contact-form__textarea {
+  height: 250px;
+  width: 95%;
+}
+.contact-form__input-field:focus,
+.contact-form__textarea:focus {
+  outline: none !important;
+  box-shadow: 0 0 15px $color-blue-light;
+}
+
+/* checkbox styles */
+.contact-form__input-box--checkbox {
+  margin-top: 15px;
+  display: block;
+  cursor: pointer;
+  position: relative;
+  padding-left: 35px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 90%;
+}
+.contact-form__checkbox {
+  position: absolute;
+  left: 0;
+  opacity: 0;
+  z-index: 10;
+  cursor: pointer;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+.contact-form__checkmark {
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+}
+// .contact-form__input-box--checkbox:hover
+//   .contact-form__checkbox
+//   ~ .contact-form__checkmark {
+//   background-color: #ccc;
+// }
+.contact-form__checkbox:checked ~ .contact-form__checkmark {
+  background-color: $color-blue-medium;
+}
+.contact-form__checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.contact-form__checkbox:checked ~ .contact-form__checkmark:after {
+  display: block;
+}
+.contact-form__input-box--checkbox .contact-form__checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* submit btn styles */
+
+.btn--contact {
+  border-radius: 5px;
+  background-color: $color-blue-medium;
+  color: $color-primary-font;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 20px;
+  margin-right: 30px;
+  float: right;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  width: 100px;
+}
+
+.btn--contact:hover {
+  background-color: $color-blue-light;
+  color: $color-blue-dark;
+}
+
+.btn--contact:active {
+  background-color: $color-blue-medium;
+  color: $color-primary-font;
+}
+
+/* contact link styles */
+
+.contact-info__email-phone {
+  line-height: 20px;
+  background-color: #fff;
+  padding: 2px 15px;
+  margin: 15px 20px 0;
+}
+
+.contact-info__link-title {
+  color: $color-blue-light;
+  margin-right: 5px;
+  font-weight: 700;
+}
+
+.contact-info__link {
+  color: $color-blue-medium;
+  font-weight: 700;
+}
+
+.contact-info__address {
+  margin-top: 15px;
+  color: $color-primary-font;
+}
+.contact-info__p {
+  text-align: center;
+  font-weight: 600;
+}
