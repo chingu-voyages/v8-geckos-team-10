@@ -81,6 +81,19 @@ li .navLink {
   background-color: $color-blue-light;
 }
 
+.responsive {
+  display: none;
+}
+
+@media (max-width: 1070px) {
+  .navBar {
+    display: none;
+}
+  .responsive {
+    display: block;
+  }
+}
+
 /* Landing Page Body Styles */
 .landing__page__body {
   display: inline-block;

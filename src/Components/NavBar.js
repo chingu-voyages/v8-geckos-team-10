@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 const NavBar = () => {
   return (
+  <div>
     <div className="navBar">
       <ul className="navBar-list">
         <li className="navElement">
@@ -62,6 +63,23 @@ const NavBar = () => {
         </li>
       </ul>
     </div>
+    <div className='responsive'>
+      
+      <ul className="navBar-list">
+          <li className="navElement">
+            <div className="btn-container">
+              <Link className="navLink" to="/">
+                Home
+              </Link>
+            </div>
+          </li>
+          
+      </ul>
+    
+    </div>
+  </div>
+
+    
   );
 };
 
