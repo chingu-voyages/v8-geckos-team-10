@@ -81,9 +81,50 @@ li .navLink {
   background-color: $color-blue-light;
 }
 
+/* Collapsible NavBar */
+
 .responsive {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
   display: none;
 }
+
+#collapsible-btn{
+  float: right;
+  margin-top: 3px;
+  margin-right: 10px;
+  font-size: 2rem;
+}
+
+#collapsible-btn :hover {
+  color: white;
+  transition: all 0.5s ease-out;
+
+}
+
+input#menu {
+  display: none;
+}
+.menu-content {
+  max-height: 0;
+  overflow: hidden;
+  font-family: 'Oswald', sans-serif; 
+  padding: 0 0 0 50px;
+}
+
+input:checked +label {
+  color: $color-blue-light;
+  transition: all 0.5s ease-out;
+}
+input:checked ~ .menu-content {
+  max-height: 100%;
+  
+}
+
+
+
 
 @media (max-width: 1070px) {
   .navBar {
