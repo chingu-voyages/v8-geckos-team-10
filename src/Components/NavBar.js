@@ -74,19 +74,18 @@ const NavBar = () => {
               </Link>
             </div>
           </li>
-          <li >
-
+          <li>
               <input type="checkbox" id="menu"/>
               <label id='collapsible-btn' for="menu"><FontAwesomeIcon icon="gem" /></label>
-              <div class="menu-content">
-                <ul>
-                    <li><a href="#"></a>About Us</li>
-                    <li><a href="#"></a>Diamond Stories</li>
-                    <li><a href="#"></a>Photos</li>
-                    <li><a href="#"></a>Volunteer</li>
-                    <li><a href="#"></a>Donate</li>
-                    <li><a href="#"></a>Contact Us</li>
-                </ul>
+              <div className="menu-content">
+                <div className="menu-container">
+                    <Link className="menu-item" to="/about"><a href="#"></a>About Us</Link>
+                    <Link className="menu-item" to="/stories"><a href="#"></a>Diamond Stories</Link>
+                    <Link className="menu-item" to="/photos"><a href="#"></a>Photos</Link>
+                    <Link className="menu-item" to="/volunteer"><a href="#"></a>Volunteer</Link>
+                    <Link className="menu-item" to="/donate"><a href="#"></a>Donate</Link>
+                    <Link className="menu-item" to="/contact"><a href="#"></a>Contact Us</Link>
+                </div>
             </div>
           </li>
 

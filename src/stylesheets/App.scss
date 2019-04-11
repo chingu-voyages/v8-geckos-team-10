@@ -101,17 +101,36 @@ li .navLink {
 #collapsible-btn :hover {
   color: white;
   transition: all 0.5s ease-out;
-
 }
 
 input#menu {
   display: none;
 }
 .menu-content {
-  max-height: 0;
-  overflow: hidden;
-  font-family: 'Oswald', sans-serif; 
-  padding: 0 0 0 50px;
+  display: none;
+  float: left;
+  background-color:$color-blue-dark;
+  width: 100%;
+  border: 3px solid $color-blue-medium;
+}
+.menu-container {
+  display: flex;
+  flex-direction: column;
+}
+.menu-item {
+  text-decoration: none;
+  color: $color-primary-font;
+  padding: 1rem;
+  font-weight: 700;
+}
+.menu-item:not(:nth-child(1)){
+  border-top: 1px solid $color-blue-light;
+  
+}
+
+.menu-item:hover{
+  background-color: $color-blue-light; 
+  transition: all 0.5s ease-out;
 }
 
 input:checked +label {
@@ -119,11 +138,8 @@ input:checked +label {
   transition: all 0.5s ease-out;
 }
 input:checked ~ .menu-content {
-  max-height: 100%;
-  
+  display: block;
 }
-
-
 
 
 @media (max-width: 1070px) {
