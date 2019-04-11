@@ -1,9 +1,24 @@
 @import "config";
   
-  .volunteer__form {
+  .volunteer-page__container {
+    padding: 50px 75px 75px 80px;
+    margin: 0 auto;
+    max-width: $max-width-body;
+    background-color: rgba(241, 249, 255, 0.9);
+    text-align: left;
+  }
+
+  .volunteer-form__container {
     display: block;
     position: relative;
-    height: 400px;
-    width: 100%;
-    padding: 60px 0 80px;
+    height: 175px;
+    padding: 40px 100px;
+  }
+
+  .volunteer__heading--primary {
+    font-size: 40px;
+    letter-spacing: 1px;
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
   }
