@@ -9,6 +9,7 @@ import Footer from "./Components/Footer.js";
 import About from "./Components/About.js";
 import Stories from "./Components/Stories.js";
 import Donate from "./Components/Donate.js";
+import Volunteer from "./Components/Volunteer.js";
 
 class App extends Component {
   render() {
@@ -19,6 +20,7 @@ class App extends Component {
         <Route exact path="/about" render={() => <About />} />
         <Route exact path="/stories" render={() => <Stories />} />
         <Route exact path="/donate" render={() => <Donate />} />
+        <Route exact path="/volunteer" render={() => <Volunteer />} />
         <Footer />
       </div>
     );
