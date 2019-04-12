@@ -79,12 +79,12 @@ const NavBar = () => {
               <label id='collapsible-btn' for="menu"><FontAwesomeIcon icon="gem" /></label>
               <div className="menu-content">
                 <div className="menu-container">
-                    <Link className="menu-item" to="/about"><a href="#"></a>About Us</Link>
-                    <Link className="menu-item" to="/stories"><a href="#"></a>Diamond Stories</Link>
-                    <Link className="menu-item" to="/photos"><a href="#"></a>Photos</Link>
-                    <Link className="menu-item" to="/volunteer"><a href="#"></a>Volunteer</Link>
-                    <Link className="menu-item" to="/donate"><a href="#"></a>Donate</Link>
-                    <Link className="menu-item" to="/contact"><a href="#"></a>Contact Us</Link>
+                    <Link className="menu-item" to="/about">About Us</Link>
+                    <Link className="menu-item" to="/stories">Diamond Stories</Link>
+                    <Link className="menu-item" to="/photos">Photos</Link>
+                    <Link className="menu-item" to="/volunteer">Volunteer</Link>
+                    <Link className="menu-item" to="/donate">Donate</Link>
+                    <Link className="menu-item" to="/contact">Contact Us</Link>
                 </div>
             </div>
           </li>
