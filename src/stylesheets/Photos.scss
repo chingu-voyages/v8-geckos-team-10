@@ -1,1 +1,13 @@
 @import "config";
+
+.photos_container {
+    background-color: rgba(241, 249, 255, 0.9);
+    line-height: 25px;
+    margin: 0 auto;
+    max-width: $max-width-body;
+    padding: 40px 20px 200px;
+    text-align: center;
+    height: 100%;
+  }
+
+

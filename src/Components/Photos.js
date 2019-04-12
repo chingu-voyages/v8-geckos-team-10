@@ -3,8 +3,9 @@ import "../stylesheets/Photos.scss";
 
 const Photos = () => {
   return (
-      <div>
-          <h1>Soon to Be Photos Page!</h1>
+      <div className='photos_container'>
+        <h1>PHOTO GALLERY</h1>
+        
       </div>
   );
 };
