@@ -76,7 +76,7 @@ const NavBar = () => {
           </li>
           <li>
               <input type="checkbox" id="menu"/>
-              <label id='collapsible-btn' for="menu"><FontAwesomeIcon icon="gem" /></label>
+              <label id='collapsible-btn' htmlFor="menu"><FontAwesomeIcon icon="gem" /></label>
               <div className="menu-content">
                 <div className="menu-container">
                     <Link className="menu-item" to="/about">About Us</Link>
