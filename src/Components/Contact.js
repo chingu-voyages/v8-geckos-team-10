@@ -86,7 +86,6 @@ const Contact = () => {
             <div className="contact-form__input-box--checkbox">
               <input
                 className="contact-form__checkbox"
-                aria-required="true"
                 id="agreement"
                 type="checkbox"
                 name="agreement"
@@ -129,7 +128,13 @@ const Contact = () => {
           </div>
           <div className="contact-info__address">
             <p className="contact-info__p">
-              4825 S. 25th St. Suite # 100 Omaha, NE 68107
+              <a
+                href="http://maps.google.com/?q=4825 S. 25th St. Suite # 100 Omaha, NE 68107"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                4825 S. 25th St. Suite # 100 Omaha, NE 68107
+              </a>
             </p>
           </div>
           <div className="google-maps__container">
@@ -145,6 +150,7 @@ const Contact = () => {
                 marginBottom: "10px"
               }}
               src="//www.weebly.com/weebly/apps/generateMap.php?map=google&amp;elementid=123812155766003128&amp;ineditor=0&amp;control=3&amp;width=auto&amp;height=350px&amp;overviewmap=0&amp;scalecontrol=0&amp;typecontrol=0&amp;zoom=15&amp;long=-95.94822729999999&amp;lat=41.2102195&amp;domain=www&amp;point=1&amp;align=1&amp;reseller=true"
+              title="gmaps"
             />
           </div>
         </div>
