@@ -92,7 +92,7 @@ const Contact = () => {
                 required
               />
               <span className="contact-form__checkmark" />
-              <label for="agreement">
+              <label htmlFor="agreement">
                 I agree to receiving marketing and promotional materials
               </label>
             </div>
