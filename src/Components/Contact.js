@@ -14,7 +14,7 @@ const Contact = () => {
               Indicates required field
             </p>
             <div className="contact-form__input-box--text-short">
-              <label for="firstName" className="contact-form__label">
+              <label htmlFor="firstName" className="contact-form__label">
                 <span className="contact-form__mandatory-field" />
                 First Name
               </label>
