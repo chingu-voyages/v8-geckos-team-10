@@ -28,7 +28,7 @@ const Contact = () => {
               />
             </div>
             <div className="contact-form__input-box--text-short">
-              <label for="lastName" className="contact-form__label">
+              <label htmlFor="lastName" className="contact-form__label">
                 <span className="contact-form__mandatory-field" />
                 Last Name
               </label>
@@ -42,7 +42,7 @@ const Contact = () => {
               />
             </div>
             <div className="contact-form__input-box--text-short">
-              <label for="emailAddress" className="contact-form__label">
+              <label htmlFor="emailAddress" className="contact-form__label">
                 <span className="contact-form__mandatory-field" />
                 Email
               </label>
@@ -56,7 +56,7 @@ const Contact = () => {
               />
             </div>
             <div className="contact-form__input-box--text-short">
-              <label for="phoneNumber" className="contact-form__label">
+              <label htmlFor="phoneNumber" className="contact-form__label">
                 <span className="contact-form__mandatory-field" />
                 Phone
               </label>
@@ -70,7 +70,7 @@ const Contact = () => {
               />
             </div>
             <div className="contact-form__input-box--text-long">
-              <label for="comment" className="contact-form__label">
+              <label htmlFor="comment" className="contact-form__label">
                 <span className="contact-form__mandatory-field" />
                 Comment
               </label>
