@@ -91,7 +91,7 @@ const Contact = () => {
                 name="agreement"
                 required
               />
-              <span class="contact-form__checkmark" />
+              <span className="contact-form__checkmark" />
               <label for="agreement">
                 I agree to receiving marketing and promotional materials
               </label>
