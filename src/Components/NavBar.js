@@ -1,8 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const NavBar = () => {
   return (
+  <div>
     <div className="navBar">
       <ul className="navBar-list">
         <li className="navElement">
@@ -62,6 +64,38 @@ const NavBar = () => {
         </li>
       </ul>
     </div>
+
+    <div className='responsive'>
+      <ul className="navBar-list">
+          <li className="navElement">
+            <div className="btn-container">
+              <Link className="navLink" to="/">
+                Home
+              </Link>
+            </div>
+          </li>
+          <li>
+              <input type="checkbox" id="menu"/>
+              <label id='collapsible-btn' htmlFor="menu"><FontAwesomeIcon icon="gem" /></label>
+              <div className="menu-content">
+                <div className="menu-container">
+                    <Link className="menu-item" to="/about">About Us</Link>
+                    <Link className="menu-item" to="/stories">Diamond Stories</Link>
+                    <Link className="menu-item" to="/photos">Photos</Link>
+                    <Link className="menu-item" to="/volunteer">Volunteer</Link>
+                    <Link className="menu-item" to="/donate">Donate</Link>
+                    <Link className="menu-item" to="/contact">Contact Us</Link>
+                </div>
+            </div>
+          </li>
+
+      </ul>
+            
+    
+    </div>
+  </div>
+
+    
   );
 };
 
