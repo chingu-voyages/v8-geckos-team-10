@@ -3,7 +3,7 @@ import React from "react";
 const Footer = () => {
   return (
     <div className="footer__container">
-      <div className="footer__top">
+      {/* <div className="footer__top">
         <a href="#home" className="footer__top__link">
           Home
         </a>
@@ -28,7 +28,7 @@ const Footer = () => {
         <a href="#contact" className="footer__top__link">
           Contact
         </a>
-      </div>
+      </div> */}
       <div className="footer__bottom">
         <div className="footer__bottom__company-name">
           Latino Community Betterment Corporation
