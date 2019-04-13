@@ -140,7 +140,7 @@ const Contact = () => {
           <div className="google-maps__container">
             <iframe
               allowtransparency="true"
-              frameborder="0"
+              frameBorder="0"
               scrolling="no"
               style={{
                 display: "inline-block",
