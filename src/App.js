@@ -1,6 +1,10 @@
 import React, { Component } from "react";
 import { Route } from "react-router-dom";
+
 import "./stylesheets/App.scss";
+import { library } from '@fortawesome/fontawesome-svg-core'
+
+import { faGem } from '@fortawesome/free-solid-svg-icons'
 
 import NavBar from "./Components/NavBar.js";
 import LandingPage from "./Components/LandingPage.js";
@@ -12,6 +16,8 @@ import Donate from "./Components/Donate.js";
 import Photos from "./Components/Photos.js";
 import Volunteer from "./Components/Volunteer.js";
 
+// Add Icon for Collapsible Menu
+library.add(faGem)
 
 class App extends Component {
   render() {
