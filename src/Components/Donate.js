@@ -5,7 +5,7 @@ const Donate = () => {
   return (
     <div className="donate-page__container">
       <h1 className="donate__heading--primary">Donate</h1>
-      <h2 className="donate__heading--secondary">Measuring Impact</h2>
+      {/* <h2 className="donate__heading--secondary">Measuring Impact</h2> */}
       <p>
         Program evaluations can be costly, requiring time, money, and expertise.
         But, the benefits of these evaluations are tremendous! Through ongoing

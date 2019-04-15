@@ -1,63 +1,61 @@
 @import "config";
 
 .photos_container {
-    background-color: rgba(241, 249, 255, 0.9);
-    line-height: 25px;
-    margin: 0 auto;
-    max-width: $max-width-body;
-    padding: 40px 20px 200px;
-    text-align: center;
-    height: 100%;
-  }
+  @include page-default;
+}
+
+.photos_title {
+  @include heading-primary;
+}
 
 .slide-container {
-	width: 700px;
-	height: 467px;
-	margin-top: 5rem;
-	margin-left: 10rem;
-	margin-right: auto;
-	overflow: hidden;
-	text-align: center;
-	box-shadow: 10px 10px 5px grey;
+  max-width: 700px;
+  height: 467px;
+  margin-top: 5rem;
+  margin-left: 10rem;
+  margin-right: auto;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 10px 10px 5px grey;
 }
 
-.image-container{
-	width: 2100px;
-	height: 600px;
-	position: relative;
-	transition: left 2s;
-	-webkit-transition: left 2s;
-	-moz-transition: left 2s;
-	-o-transition: left 2s;
+.image-container {
+  width: 2100px;
+  height: 600px;
+  position: relative;
+  transition: left 2s;
+  -webkit-transition: left 2s;
+  -moz-transition: left 2s;
+  -o-transition: left 2s;
 }
 .slider-image {
-	float: leaft;
-	margin: 0px;
-	padding: 0px;
+  float: leaft;
+  margin: 0px;
+  padding: 0px;
 }
 
 .button-container {
-	top: -11rem;
-	position: relative;
+  top: -11rem;
+  position: relative;
 }
 
 .slider-button {
-	margin: 10px;
-	display: inline-block;
-	height: 15px;
-	width: 15px;
-	border-radius: 50%;
-	background-color: red;
+  margin: 10px;
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: red;
 }
 
-#slider-image-1:target ~ .image-container{
-	left: 0px;
+#slider-image-1:target ~ .image-container {
+  left: 0px;
 }
 
-#slider-image-2:target ~ .image-container{
-	left: -700px;
+#slider-image-2:target ~ .image-container {
+  left: -700px;
 }
 
-#slider-image-3:target ~ .image-container{
-	left: -1400px;
+#slider-image-3:target ~ .image-container {
+  left: -1400px;
 }

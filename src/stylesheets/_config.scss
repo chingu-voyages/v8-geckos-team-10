@@ -7,6 +7,30 @@ $color-blue-dark: #091d44;
 $color-black: #000000;
 
 $max-width-body: 1000px;
+$heading-primary-size: 40px;
+$line-height-default: 25px;
+$footer-height: 64px;
+
+@mixin page-default {
+  background-color: rgba(241, 249, 255, 0.9);
+  line-height: $line-height-default;
+  max-width: $max-width-body;
+  margin: 0 auto;
+  padding: 50px 40px;
+  position: relative;
+  text-align: left;
+}
+
+@mixin heading-primary {
+  color: darken($color-blue-medium, 5%);
+  text-shadow: 2px 0px lighten($color-blue-light, 10%);
+  font-size: $heading-primary-size;
+  line-height: 45px;
+  letter-spacing: 1px;
+  padding: 10px;
+  text-align: center;
+  text-transform: uppercase;
+}
 
 @mixin mediaSm {
   @media screen and (min-width: 400px) and (max-width: 500px) {

@@ -2,25 +2,16 @@
 
 /*Stories Page Styles*/
 .stories_container {
-  background-color: rgba(241, 249, 255, 0.9);
-  line-height: 25px;
-  margin: 0 auto;
-  max-width: $max-width-body;
-  padding: 40px 20px 200px;
-  text-align: left;
+  @include page-default;
 }
 
 .stories_title {
-  font-size: 40px;
-  letter-spacing: 1px;
-  padding: 10px;
-  text-align: center;
-  text-transform: uppercase;
+  @include heading-primary;
 }
 
 /*Testimonies */
-.testimonials_container{
-   display: flex;
+.testimonials_container {
+  display: flex;
   flex-direction: column;
   align-items: center;
 }
@@ -66,7 +57,7 @@
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   left: 100%;
-  content: '';
+  content: "";
   width: 0;
   height: 0;
   border-style: solid;
@@ -78,7 +69,7 @@
   position: absolute;
   bottom: 75%;
   left: 45%;
-  content: '';
+  content: "";
   width: 0;
   height: 0;
   border-style: solid;
