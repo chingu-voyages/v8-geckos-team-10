@@ -1,20 +1,11 @@
 @import "config";
 
 .contact-page__container {
-  background-color: rgba(241, 249, 255, 0.9);
-  line-height: 25px;
-  margin: 0 auto;
-  max-width: $max-width-body;
-  padding: 40px 20px 200px;
-  text-align: left;
+  @include page-default;
 }
 
 .contact__heading--primary {
-  font-size: 40px;
-  letter-spacing: 1px;
-  padding: 10px;
-  text-align: center;
-  text-transform: uppercase;
+  @include heading-primary;
 }
 
 .contact-page__body {
