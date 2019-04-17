@@ -108,15 +108,22 @@ li .navLink {
 }
 
 #collapsible-btn {
-  float: right;
+  float: left;
   margin-top: 3px;
-  margin-right: 10px;
+  margin-left: 10px;
   font-size: 2rem;
+  font-weight: bolder;
+  text-shadow: 1px 0px $color-primary-font;
+}
+#menu_label {
+  padding: 0.5rem;
 }
 
 #collapsible-btn :hover {
   color: white;
+  text-shadow: 2px 0px $color-primary-font;
   transition: all 0.5s ease-out;
+  cursor: pointer;
 }
 
 input#menu {
@@ -150,7 +157,7 @@ input#menu {
 
 input:checked + label {
   color: $color-blue-light;
-  transition: all 0.5s ease-out;
+  transition: all 0.5s ease-in-out;
 }
 input:checked ~ .menu-content {
   display: block;

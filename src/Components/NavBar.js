@@ -67,18 +67,12 @@ const NavBar = () => {
 
     <div className='responsive'>
       <ul className="navBar-list">
-          <li className="navElement">
-            <div className="btn-container">
-              <Link className="navLink" to="/">
-                Home
-              </Link>
-            </div>
-          </li>
           <li>
               <input type="checkbox" id="menu"/>
-              <label id='collapsible-btn' htmlFor="menu"><FontAwesomeIcon icon="gem" /></label>
+              <label id='collapsible-btn' htmlFor="menu"><FontAwesomeIcon icon="gem" /><span id='menu_label'>MENU</span></label>
               <div className="menu-content">
                 <div className="menu-container">
+                    <Link className="menu-item" to="/">Home</Link>
                     <Link className="menu-item" to="/about">About Us</Link>
                     <Link className="menu-item" to="/stories">Diamond Stories</Link>
                     <Link className="menu-item" to="/photos">Photos</Link>
