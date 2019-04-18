@@ -69,7 +69,7 @@ const NavBar = () => {
       <ul className="navBar-list">
           <li>
               <input type="checkbox" id="menu"/>
-              <label id='collapsible-btn' htmlFor="menu"><FontAwesomeIcon icon="gem" /><span id='menu_label'>MENU</span></label>
+              <label id='collapsible-btn' htmlFor="menu"><FontAwesomeIcon icon="gem" /><span id='menu_label'>Menu</span></label>
               <div className="menu-content">
                 <div className="menu-container">
                     <Link className="menu-item" to="/">Home</Link>
