@@ -7,10 +7,20 @@
 .volunteer-form__container {
   display: block;
   position: relative;
-  height: 175px;
+  height: 375px;
   padding: 40px 100px;
 }
 
 .volunteer__heading--primary {
   @include heading-primary;
+}
+
+@include mediaMd {
+  .volunteer-form__container {
+    padding: 15px 35px;
+  }
+
+}
+@include mediaSm{
+
 }

@@ -1,0 +1,23 @@
+@include mediaSm {
+    .volunteer__bios {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+      }
+      
+      .individual__bios {
+          max-width: 100px;
+      }
+  }
+  
+@include mediaMd {
+   
+  }
+  
+@include mediaLg {
+    
+  }
+  
+@include mediaXl {
+   
+  }
