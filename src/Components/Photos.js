@@ -1,45 +1,33 @@
 import React from "react";
 import "../stylesheets/Photos.scss";
 
+
 const Photos = () => {
   return (
-    <div className="photos_container">
+  <div className="photos_container">
       <h1 className="photos_title">PHOTO GALLERY</h1>
-      <div className="slide-container">
-        <span id="slider-image-1" />
-        <span id="slider-image-2" />
-        <span id="slider-image-3" />
-
-        <div className="image-container">
-          <img
-            src="https://images.unsplash.com/photo-1463946377180-f5185c2783e5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=60"
-            className="slider-image"
-            alt="1"
-          />
-          <img
-            src="https://images.unsplash.com/photo-1463946377180-f5185c2783e5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=60"
-            className="slider-image"
-            alt="2"
-          />
-          <img
-            src="https://images.unsplash.com/photo-1463946377180-f5185c2783e5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=60"
-            className="slider-image"
-            alt="3"
-          />
+      <div className="row"> 
+        <div className="column">
+          <img className='image'src="../assets/photos_page/photo2.jpg" alt='food pantry service'/>
+          <img className='image' src="../assets/photos_page/photo3.jpg" alt='community service'/>
+          
         </div>
-        <div className="button-container">
-          <a href="#slider-image-1" className="slider-button" alt="image 1">
-            {" "}
-          </a>
-          <a href="#slider-image-2" className="slider-button" alt="image 2">
-            {" "}
-          </a>
-          <a href="#slider-image-3" className="slider-button" alt="image 3">
-            {" "}
-          </a>
+        <div className="column">
+          <img className='image' src="../assets/photos_page/photo4.jpg" alt='young man in his graduation after completing the program'/>
+          <img className='image' src="../assets/photos_page/photo5.jpg" alt='Employment and financial counseling'/>
+          <img className='image' src="../assets/photos_page/photo6.jpg" alt='English as a Second Language class'/>
+        </div> 
+        <div className="column">
+          <img className='image' src="../assets/photos_page/photo7.jpg" alt='One World Clinic Partership'/>
+          <img className='image' src="../assets/photos_page/photo8.png" alt='young man celebrating his return to college'/>
+          <img className='image' src="../assets/photos_page/photo9.jpg" alt='food pantry service'/>
+        </div>
+        <div className="column">
+          <img className='image' src="../assets/photos_page/photo10.png" alt='thanksgiving lunch'/>
+          <img className='image' src="../assets/photos_page/photo11.jpg" alt='young man registering at Metropolitan Community College'/>
         </div>
       </div>
-    </div>
+  </div>
   );
 };
 
