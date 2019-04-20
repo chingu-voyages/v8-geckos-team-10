@@ -5,6 +5,7 @@ const Contact = () => {
   return (
     <div className="contact-page__container">
       <h1 className="contact__heading--primary">Contact Us</h1>
+      <hr className="hr-line" />
       {/* Left side */}
       <div className="contact-page__body">
         <div className="contact-form__container">
@@ -151,6 +152,7 @@ const Contact = () => {
               }}
               src="//www.weebly.com/weebly/apps/generateMap.php?map=google&amp;elementid=123812155766003128&amp;ineditor=0&amp;control=3&amp;width=auto&amp;height=350px&amp;overviewmap=0&amp;scalecontrol=0&amp;typecontrol=0&amp;zoom=15&amp;long=-95.94822729999999&amp;lat=41.2102195&amp;domain=www&amp;point=1&amp;align=1&amp;reseller=true"
               title="gmaps"
+              role="application"
             />
           </div>
         </div>

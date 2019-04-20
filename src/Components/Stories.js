@@ -5,7 +5,6 @@ const Stories = () => {
   return (
     <div className="stories_container">
       <h1 className="stories_title">MEET OUR DIAMONDS</h1>
-
       <div className="testimonials_container">
         <figure className="snip1386">
           <img

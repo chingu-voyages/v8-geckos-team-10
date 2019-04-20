@@ -33,6 +33,32 @@ $footer-height: 64px;
   text-transform: uppercase;
 }
 
+@mixin btn-default {
+  border-radius: 5px;
+  background-color: $color-blue-medium;
+  box-shadow: 0 0 2px rgb(129, 129, 129);
+  border: 2px double $color-blue-light;
+  color: $color-primary-font;
+  cursor: pointer;
+  display: block;
+  font-weight: 600;
+  margin: 40px auto;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  width: 100px;
+  transition: 0.2s;
+}
+@mixin btn-default--hover {
+  background-color: $color-blue-light;
+  border: 2px double $color-blue-medium;
+  color: $color-blue-dark;
+}
+@mixin btn-default--active {
+  background-color: $color-blue-medium;
+  color: $color-primary-font;
+}
+
 @mixin mediaSm {
   @media screen and (min-width: 400px) and (max-width: 500px) {
     @content;
