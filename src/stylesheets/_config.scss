@@ -34,7 +34,7 @@ $footer-height: 64px;
 }
 
 @mixin mediaSm {
-  @media screen and (min-width: 400px) and (max-width: 500px) {
+  @media screen and (min-width: 300px) and (max-width: 500px) {
     @content;
   }
 }
