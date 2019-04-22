@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="footer__container">
+    <div className="footer__container" role="contentinfo">
       {/* <div className="footer__top">
         <a href="#home" className="footer__top__link">
           Home

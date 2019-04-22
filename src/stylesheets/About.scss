@@ -18,14 +18,6 @@
   }
 }
 
-.about-page__list {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  list-style: circle;
-}
-
 .about-title {
   @include heading-primary;
 }
