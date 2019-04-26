@@ -39,6 +39,14 @@
   opacity: 0.7;
 }
 
+.img {
+  position: relative;
+  float: left;
+  width:  10rem;
+  height: 10rem;
+  background-repeat:   no-repeat;
+  background-size:     cover;
+}
 
 /* Image responsiveness */
 @media only screen and (max-width: 700px){
