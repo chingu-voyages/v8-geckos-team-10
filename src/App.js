@@ -6,7 +6,6 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 
 import { faGem } from "@fortawesome/free-solid-svg-icons";
 
-
 // Import page components
 import NavBar from "./Components/NavBar.js";
 import LandingPage from "./Components/LandingPage.js";
@@ -18,10 +17,8 @@ import Contact from "./Components/Contact.js";
 import Photos from "./Components/Photos.js";
 import Volunteer from "./Components/Volunteer.js";
 
-
 // Add Icon for Collapsible Menu
 library.add(faGem);
-
 
 class App extends Component {
   render() {
