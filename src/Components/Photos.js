@@ -11,6 +11,7 @@ const Photos = () => {
 
   <div className="photos_container">
       <h1 className="photos_title">PHOTO GALLERY</h1>
+      <hr className="hr-line" />
       <div className="row"> 
         <div className="column">
           <ModalImage className='image'
@@ -19,6 +20,12 @@ const Photos = () => {
             alt='Food Pantry Services'
           />
           <ModalImage className='image'
+            small={"../assets/photos_page/photo5.jpg"}
+            large={"../assets/photos_page/photo5.jpg"}
+            alt="Financial Counseling"
+          />
+           
+          <ModalImage className='image'
             small={"../assets/photos_page/photo3.jpg"}
             large={"../assets/photos_page/photo3.jpg"}
             alt='Graduation from Metropolitan Community College'
@@ -26,21 +33,25 @@ const Photos = () => {
 
         </div>
         <div className="column">
-        <ModalImage className='image'
-            small={"../assets/photos_page/photo4.jpg"}
-            large={"../assets/photos_page/photo4.jpg"}
-            alt="Community Service and Engagement"
+          <ModalImage className='image'
+              small={"../assets/photos_page/photo4.jpg"}
+              large={"../assets/photos_page/photo4.jpg"}
+              alt="Community Service and Engagement"
+            />
+          <ModalImage className='image'
+            small={"../assets/photos_page/photo10.png"}
+            large={"../assets/photos_page/photo10.png"}
+            alt="Returning to College Celebration"
           />
-        <ModalImage className='image'
-            small={"../assets/photos_page/photo5.jpg"}
-            large={"../assets/photos_page/photo5.jpg"}
-            alt="Financial Counseling"
+          
+        
+          <ModalImage className='image'
+            small={"../assets/photos_page/photo9.jpg"}
+            large={"../assets/photos_page/photo9.jpg"}
+            alt="Metropolitan Community College Registration"
           />
-        <ModalImage className='image'
-            small={"../assets/photos_page/photo6.jpg"}
-            large={"../assets/photos_page/photo6.jpg"}
-            alt="ESL Classes"
-          />
+       
+          
         </div> 
         <div className="column">
           <ModalImage className='image'
@@ -53,18 +64,14 @@ const Photos = () => {
             large={"../assets/photos_page/photo8.png"}
             alt="Food Pantry Services"
           />
-          <ModalImage className='image'
-            small={"../assets/photos_page/photo9.jpg"}
-            large={"../assets/photos_page/photo9.jpg"}
-            alt="Metropolitan Community College Registration"
-          />
+          
         </div>
         <div className="column">
           <ModalImage className='image'
-            small={"../assets/photos_page/photo10.png"}
-            large={"../assets/photos_page/photo10.png"}
-            alt="Returning to College Celebration"
-          />
+              small={"../assets/photos_page/photo6.jpg"}
+              large={"../assets/photos_page/photo6.jpg"}
+              alt="ESL Classes"
+            />
           <ModalImage className='image'
             small={"../assets/photos_page/photo11.jpg"}
             large={"../assets/photos_page/photo11.jpg"}

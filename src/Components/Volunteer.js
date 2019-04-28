@@ -7,6 +7,7 @@ const Volunteer = () => {
       <div className="volunteer-page__container">
         <div className="volunteer__descriptions">
         <h1 className="volunteer__heading--primary">Roles of Volunteers</h1>
+        <hr className="hr-line" />
         <h2>Mentors</h2>
         <p>We are looking for highly reliable people to assist as mentors and come in once a week
            or twice a month. Some of our participants have no one to turn to after they have served 

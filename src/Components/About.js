@@ -6,6 +6,7 @@ const About = () => {
     <div className="about-us__container">
       <div className="organization__container">
         <h1 className="about-title">ABOUT US</h1>
+        <hr className="hr-line" />
         <div className="organization__details">
           <p>
             Latino CBC is a non-profit organization that works with the Douglas
@@ -43,6 +44,7 @@ const About = () => {
           </p>
           <p>We believe everybody deserves a second chance!</p>
         </div>
+        <hr className="hr-line" />
         <h2>Meet the team</h2>
         <div className="volunteer__bios">
           <div className="individual__bio">
@@ -112,19 +114,6 @@ const About = () => {
               Charities Omaha NE
               <br />
               Professional Affiliations Board member, Latino CBC
-            </p>
-          </div>
-          <div className="individual__bio">
-            <img src="../assets/jenniferJazynka.jpg" alt="Jennifer Jazynka" />
-            <h3>Jennifer Jazynka</h3>
-            <p>
-              Jennifer Jazynka has been a Branch Manager at Omaha Public Library
-              for the past ten years and has been a public librarian for the
-              past fifteen years. She is passionate about community,
-              connections, and unfettered access to educational and
-              informational resources in order to keep learning and become the
-              best version of ourselves. She lives with her husband Aaron and
-              two children.
             </p>
           </div>
           <div className="individual__bio">
