@@ -26,7 +26,6 @@ class Contact extends Component {
       buttonText: "...sending"
     });
 
-    console.log(this.props);
     this.sendFeedback(
       template,
       this.state.email,
@@ -74,7 +73,6 @@ class Contact extends Component {
       .then(res => {
         this.setState({ formEmailSent: true });
         this.resetForm();
-        console.log(res);
       })
       // Handle errors here however you like, or use a React error boundary
       .catch(err => console.error("Failed to send feedback. Error: ", err));
