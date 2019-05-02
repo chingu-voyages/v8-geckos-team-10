@@ -157,6 +157,11 @@
   @include btn-default--active;
 }
 
+.btn--contact:disabled,
+.btn--contact:disabled:hover {
+  @include btn-default--disabled;
+}
+
 /* contact link styles */
 
 .contact-info__email-phone {

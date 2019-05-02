@@ -2,11 +2,9 @@ import React, { Component } from "react";
 import "../stylesheets/Contact.scss";
 import * as emailjs from "emailjs-com";
 
-const REACT_APP_EMAILJS_USERID = `${process.env.REACT_APP_EMAILJS_USERID}`;
-const REACT_APP_EMAILJS_TEMPLATEID = `${
-  process.env.REACT_APP_EMAILJS_TEMPLATEID
-}`;
-const REACT_APP_EMAILJS_RECEIVER = `${process.env.REACT_APP_EMAILJS_RECEIVER}`;
+const emailJsUserId = `${process.env.REACT_APP_EMAILJS_USERID}`;
+const template = `${process.env.REACT_APP_EMAILJS_TEMPLATEID}`;
+const receiverEmail = `${process.env.REACT_APP_EMAILJS_RECEIVER}`;
 
 class Contact extends Component {
   state = {
@@ -28,23 +26,14 @@ class Contact extends Component {
       buttonText: "...sending"
     });
 
-    // let data = {
-    //   firstName: this.state.firstName,
-    //   lastName: this.state.lastName,
-    //   email: this.state.email,
-    //   phone: this.state.phone,
-    //   message: this.state.message,
-    //   agreement: this.state.agreement
-    // };
-    const receiverEmail = REACT_APP_EMAILJS_RECEIVER;
-    const template = REACT_APP_EMAILJS_TEMPLATEID;
-
+    console.log(this.props);
     this.sendFeedback(
       template,
-      this.props.email,
+      this.state.email,
       receiverEmail,
       this.state.firstName,
       this.state.lastName,
+      this.state.email,
       this.state.phone,
       this.state.message,
       this.state.agreement
@@ -61,6 +50,7 @@ class Contact extends Component {
     receiverEmail,
     firstName,
     lastName,
+    email,
     phone,
     message,
     agreement
@@ -74,11 +64,12 @@ class Contact extends Component {
           receiverEmail,
           firstName,
           lastName,
+          email,
           phone,
           message,
           agreement
         },
-        REACT_APP_EMAILJS_USERID
+        emailJsUserId
       )
       .then(res => {
         this.setState({ formEmailSent: true });
@@ -99,7 +90,6 @@ class Contact extends Component {
       buttonText: "Sent"
     });
   };
-  // }
 
   render() {
     return (
@@ -209,6 +199,7 @@ class Contact extends Component {
                   className="btn--contact"
                   type="submit"
                   value={this.state.buttonText}
+                  disabled={this.state.formEmailSent}
                 />
               </div>
             </form>

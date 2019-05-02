@@ -58,6 +58,11 @@ $footer-height: 64px;
   background-color: $color-blue-medium;
   color: $color-primary-font;
 }
+@mixin btn-default--disabled {
+  background-color: $color-primary-font;
+  border: 2px double $color-blue-light;
+  color: $color-blue-light;
+}
 
 @mixin mediaSm {
   @media screen and (min-width: 300px) and (max-width: 500px) {
