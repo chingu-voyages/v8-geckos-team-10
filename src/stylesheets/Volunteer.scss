@@ -15,12 +15,14 @@
   @include heading-primary;
 }
 
+.volunteer__heading--secondary {
+  @include heading-secondary;
+}
+
 @include mediaMd {
   .volunteer-form__container {
     padding: 15px 35px;
   }
-
 }
-@include mediaSm{
-
+@include mediaSm {
 }

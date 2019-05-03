@@ -8,9 +8,7 @@
   @include heading-primary;
 }
 .donate__heading--secondary {
-  color: $color-blue-medium;
-  font-size: 28px;
-  text-align: center;
+  @include heading-secondary;
 }
 .donate-page__list {
   list-style: circle;
