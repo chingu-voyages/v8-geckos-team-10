@@ -115,19 +115,6 @@ const About = () => {
             </p>
           </div>
           <div className="individual__bio">
-            <img src="../assets/jenniferJazynka.jpg" alt="Jennifer Jazynka" />
-            <h3>Jennifer Jazynka</h3>
-            <p>
-              Jennifer Jazynka has been a Branch Manager at Omaha Public Library
-              for the past ten years and has been a public librarian for the
-              past fifteen years. She is passionate about community,
-              connections, and unfettered access to educational and
-              informational resources in order to keep learning and become the
-              best version of ourselves. She lives with her husband Aaron and
-              two children.
-            </p>
-          </div>
-          <div className="individual__bio">
             <img src="../assets/franciscoZuniga.jpg" alt="Francisco Zuñiga" />
             <h3>Francisco Zuñiga</h3>
             <p>
