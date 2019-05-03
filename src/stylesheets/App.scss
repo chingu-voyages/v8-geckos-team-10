@@ -35,7 +35,6 @@ body {
 
 .hr-line {
   width: 100%;
-  // margin-top: -20px;
   margin-bottom: 20px;
   border: 0.5px solid lighten($color-blue-dark, 20%);
   box-shadow: 0.5px 0.5px 2px lighten($color-blue-light, 20%);
@@ -53,12 +52,12 @@ body {
   color: white;
   line-height: 40px;
   background: $color-blue-dark;
-  padding: 0px 40px;
+  padding: 0px 35px;
   position: relative;
   transition: all 0.5s ease-out;
 }
 .btn-container .navLink:hover {
-  padding: 0px 60px;
+  padding: 0px 45px;
 }
 
 .btn-container .navLink:after,
@@ -115,36 +114,42 @@ li .navLink {
   display: none;
 }
 
-#collapsible-btn {
+.collapsible-btn {
   float: left;
+  cursor: pointer;
   margin-top: 3px;
   margin-left: 10px;
+  padding: 0 20px;
   font-size: 2rem;
   font-weight: bolder;
-  color: $color-blue-light;
-  text-shadow: 1px 0px $color-primary-font;
-}
-#menu_label {
-  padding: 0.5rem;
-}
-
-#collapsible-btn :hover {
-  color: white;
-  text-shadow: 2px 0px $color-primary-font;
   transition: all 0.5s ease-out;
-  cursor: pointer;
+  text-shadow: 2px 0px $color-blue-dark;
+}
+.collapsible-btn--default {
+  color: lighten($color-blue-light, 5%);
+}
+.collapsible-btn--active {
+  color: $color-primary-font;
+}
+.collapsible-btn--default:hover {
+  color: $color-primary-font;
 }
 
-input#menu {
-  display: none;
+#menuLabel {
+  margin-left: 12px;
 }
-.menu-content {
-  display: none;
+
+.menu-content--open {
+  display: block;
   float: left;
   background-color: $color-blue-dark;
   width: 100%;
   border: 3px solid $color-blue-medium;
 }
+.menu-content--closed {
+  display: none;
+}
+
 .menu-container {
   display: flex;
   flex-direction: column;
@@ -158,18 +163,9 @@ input#menu {
 .menu-item:not(:nth-child(1)) {
   border-top: 1px solid $color-blue-light;
 }
-
 .menu-item:hover {
   background-color: $color-blue-light;
   transition: all 0.5s ease-out;
-}
-
-input:checked + label {
-  color: $color-blue-light;
-  transition: all 0.5s ease-in-out;
-}
-input:checked ~ .menu-content {
-  display: block;
 }
 
 @media (max-width: 1070px) {

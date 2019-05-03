@@ -6,7 +6,6 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 
 import { faGem } from "@fortawesome/free-solid-svg-icons";
 
-
 // Import page components
 import NavBar from "./Components/NavBar.js";
 import LandingPage from "./Components/LandingPage.js";
@@ -18,16 +17,33 @@ import Contact from "./Components/Contact.js";
 import Photos from "./Components/Photos.js";
 import Volunteer from "./Components/Volunteer.js";
 
-
 // Add Icon for Collapsible Menu
 library.add(faGem);
 
-
 class App extends Component {
+  state = {
+    menuOpen: false
+  };
+  // Toggle the menu when clicking on the diamond icon / Menu btn on top
+  toggleMenu = () => {
+    this.setState(prevState => ({
+      menuOpen: !prevState.menuOpen
+    }));
+  };
+  // If the menu is open, close it by clicking anywhere on the page
+  // (except the menu and the diamond icon, or it would conflict with toggleMenu())
+  clickToCloseMenu = id => {
+    console.log(id);
+    if (this.state.menuOpen && id !== "menuLabel" && id !== "diamondIcon") {
+      this.setState(prevState => ({
+        menuOpen: !prevState.menuOpen
+      }));
+    }
+  };
   render() {
     return (
-      <div className="App">
-        <NavBar />
+      <div className="App" onClick={e => this.clickToCloseMenu(e.target.id)}>
+        <NavBar menuOpen={this.state.menuOpen} toggleMenu={this.toggleMenu} />
         <Route exact path="/" render={() => <LandingPage />} />
         <Route exact path="/about" render={() => <About />} />
         <Route exact path="/stories" render={() => <Stories />} />
