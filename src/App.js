@@ -33,7 +33,6 @@ class App extends Component {
   // If the menu is open, close it by clicking anywhere on the page
   // (except the menu and the diamond icon, or it would conflict with toggleMenu())
   clickToCloseMenu = id => {
-    console.log(id);
     if (this.state.menuOpen && id !== "menuLabel" && id !== "diamondIcon") {
       this.setState(prevState => ({
         menuOpen: !prevState.menuOpen
