@@ -1,68 +1,59 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Generation Diamond
 
-## Available Scripts
+Click [here](https://generation-diamond.herokuapp.com/) to see the project live.
 
-In the project directory, you can run:
+## 1. Instructions
 
-### `npm start`
+1. Clone or download this repository.
+2. Cd into the repository from the terminal.
+3. Input the command `npm install` to install all the packages needed.
+4. Follow the steps under "How to setup Emailjs and Mailgun" to properly setup the Contact form.
+5. Input `npm start` to start the app.
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## 2. How to setup Mailgun and Emailjs
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+The Contact form uses [Mailgun](https://www.mailgun.com/) and [Emailjs](http://www.emailjs.com/) to send emails to a designated email address. You will need to setup an account for both (they both have a free plan available for testing) and then edit the .env file provided in the repository with the info requested.
 
-### `npm test`
+### 2.1. Mailgun
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. First, create a Mailgun account and verify it.
+2. Then, login and open your domain from your dashboard (you will only have one for a testing account).
+3. On the domain page, under Overview, add the email address where you would like to receive emails under "Authorized Recepients". On the same email address, you will get an email that will prompt you to authorize Mailgun to send the emails there.
+4. Get the domain name from the Domain page and the Private API key under Settings > API Security. You will need them when setting up Emailjs.
 
-### `npm run build`
+### 2.2 Emailjs
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Head to the Emailjs website and create an account.
+2. Under Email Services, click on "Add new service" and select Mailgun.
+3. Fill out the form as follows:
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+   - Name: leave it as is;
+   - Service ID: leave it as is;
+   - API Key: insert here the Mailgun Private API key;
+   - Domain: insert here the domain name from Mailgun.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+4. Then, go to Email Templates and click on "Create new template" (you can have up to 2 with a testing account);
+5. From here, you can create your own template for the emails sent through the form. Example:
 
-### `npm run eject`
+   - Subject: Email for Generation Diamond;
+   - Content:
+     > Hi,
+     > You have received a message from {{firstName}} {{lastName}} on your website Generation Diamond:
+     > "{{message}}"
+     > Sender: {{firstName}} {{lastName}}
+     > Email: {{senderEmail}}
+     > Phone: {{phone}}
+     > Agrees to receive marketing and promotional material: {{agreement}}.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+   * To email: [write here the email you authorized as receiver on Mailgun]
+   * From name (optional): {{firstName}} {{lastName}}
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+6. Finally, save the template
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### 2.3 .env file
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+An empty .env file is already provided. You can edit it using:
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+- The User ID from Emailjs (found under Account > API KEYS > User ID )
+- The name of the dedicated template you created
+- The email address that will receive all the emails
