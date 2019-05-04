@@ -1,5 +1,5 @@
 # Project Chingu: Voyage 8 - Team Geckos 10
-Project Chingu is a free collaboration community for developers, designers, and data scientists. Their objective is to bring developers all over the world to work together in proffesional-like scenarios by choosing and completing a tangible product that can be shared with the community. To learn more about Chingu, click [here](https://chingu.io/). 
+Project Chingu is a free collaboration community for developers, designers, and data scientists. Their objective is to bring developers all over the world to work together in professional-like scenarios by choosing and completing a tangible product that can be shared with the community. To learn more about Chingu, click [here](https://chingu.io/). 
 
 ## Meet the Team
 <img src="https://avatars2.githubusercontent.com/u/28880016?s=460&v=4" width="100">    Sonia Gorla (Italy) - Based in TX || [Github](https://github.com/Sonjya00) || [Linkedin](https://www.linkedin.com/in/soniagorla)
@@ -10,7 +10,7 @@ Project Chingu is a free collaboration community for developers, designers, and 
 
 ## Meet the Project: Generation Diamond
 
-Generation Diamond is a young non-profit based in Omaha, Nebraska. Their main objective is to provide young adults that have gone through the legal system a way to reentry society and avoid common pitfalls that may cause them to fall back into criminal activities. As a group, we in the Team Geckos decided to do this project because we believed it would be a great oportunity to tie some of the knowledge we had and wanted to gain into a tangible product that will benefit society.
+Generation Diamond is a young non-profit based in Omaha, Nebraska. Their main objective is to provide young adults that have gone through the legal system a way to reenter society and avoid common pitfalls that may cause them to fall back into criminal activities. As a group, we chose this project because we believed it would be a great oportunity to utilize some of the knowledge we had. We also wanted to produce a tangible product that would benefit society.
 
 Click [here](https://generation-diamond.herokuapp.com/) to see the project live.
 
