@@ -4,8 +4,7 @@
   @include page-default;
 
   h2 {
-    font-size: 28px;
-    text-align: center;
+    @include heading-secondary;
   }
 }
 
@@ -37,28 +36,24 @@
   }
 }
 
-
-
 @include mediaMd {
   .volunteer__bios {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
-  
-  .individual__bios {
-      max-width: 150px;
-  }
 
+  .individual__bios {
+    max-width: 150px;
+  }
 }
-@include mediaSm{
+@include mediaSm {
   .volunteer__bios {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 10px;
   }
-  
-  .individual__bios {
-      max-width: 75px;
-  }
 
+  .individual__bios {
+    max-width: 75px;
+  }
 }
