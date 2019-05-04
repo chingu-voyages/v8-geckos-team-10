@@ -21,10 +21,28 @@ import Volunteer from "./Components/Volunteer.js";
 library.add(faGem);
 
 class App extends Component {
+  state = {
+    menuOpen: false
+  };
+  // Toggle the menu when clicking on the diamond icon / Menu btn on top
+  toggleMenu = () => {
+    this.setState(prevState => ({
+      menuOpen: !prevState.menuOpen
+    }));
+  };
+  // If the menu is open, close it by clicking anywhere on the page
+  // (except the menu and the diamond icon, or it would conflict with toggleMenu())
+  clickToCloseMenu = id => {
+    if (this.state.menuOpen && id !== "menuLabel" && id !== "diamondIcon") {
+      this.setState(prevState => ({
+        menuOpen: !prevState.menuOpen
+      }));
+    }
+  };
   render() {
     return (
-      <div className="App">
-        <NavBar />
+      <div className="App" onClick={e => this.clickToCloseMenu(e.target.id)}>
+        <NavBar menuOpen={this.state.menuOpen} toggleMenu={this.toggleMenu} />
         <Route exact path="/" render={() => <LandingPage />} />
         <Route exact path="/about" render={() => <About />} />
         <Route exact path="/stories" render={() => <Stories />} />
