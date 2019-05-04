@@ -20,8 +20,8 @@
   position: relative;
   overflow: hidden;
   margin: 2em;
-  min-width: 500px;
-  max-width: 450px;
+  max-width: 500px;
+  min-width: 300px;
   max-height: 320px;
   width: 100%;
   color: #000000;
@@ -83,13 +83,14 @@
   -webkit-transform: translateX(30px);
   transform: translateX(30px);
   margin: 0;
+  margin-right: 25px;
 }
 
 .snip1386 h5 {
   margin: 10px 0;
   line-height: 1.2em;
   font-weight: 900;
-  color: #color-primary-font;
+  color: $color-primary-font;
 }
 
 .snip1386 blockquote {

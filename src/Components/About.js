@@ -6,6 +6,7 @@ const About = () => {
     <div className="about-us__container">
       <div className="organization__container">
         <h1 className="about-title">ABOUT US</h1>
+        <hr className="hr-line" />
         <div className="organization__details">
           <p>
             Latino CBC is a non-profit organization that works with the Douglas
@@ -43,6 +44,7 @@ const About = () => {
           </p>
           <p>We believe everybody deserves a second chance!</p>
         </div>
+        <hr className="hr-line" />
         <h2>Meet the team</h2>
         <div className="volunteer__bios">
           <div className="individual__bio">
